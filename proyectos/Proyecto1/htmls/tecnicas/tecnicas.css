@@ -1,0 +1,98 @@
+/*hero*/
+
+.hero{
+    height: 500px;
+    background-image: url(./hero.jfif);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 36px;
+    color: black;
+    font-weight: 700px;
+    background-color: red;
+    color: white;
+}
+
+.hero p{
+    font-size: 20px;
+    color: black;
+    font-weight: 400px;
+    background-color: red;
+    color: white;
+}
+
+.contenedor-texto{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color:white;
+}
+
+/*presentaciones*/
+
+.boton {
+    padding: 10px;
+    background-color: red;
+    border: transparent 1px white;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    display: block;
+    margin-top: 10px; 
+}
+
+
+
+.contenedor--presentacion {
+    display: grid;
+    grid-template-columns: 0.3fr 0.4fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "imagen ingredientes receta";
+    background-color: wheat;
+    position: relative;
+    height: 300px;
+    width: 90%;
+    margin-bottom: 20px;
+    position: relative;
+    left: 5%;
+}
+
+.imagen {
+    grid-area: imagen;
+    height: 300px;
+    width: 300px;
+}
+
+.ingredientes {
+    grid-area: ingredientes;
+    flex-direction: column;
+    align-self: center;
+    justify-self: center;
+}
+
+.receta {
+    grid-area: receta;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 14.5px;
+}
+
+.titulo {
+    position: absolute; 
+    z-index: 100;
+    background-color: red;
+    color: white;
+    text-align: center;
+}
+
+.lista  {
+    list-style: none;
+}

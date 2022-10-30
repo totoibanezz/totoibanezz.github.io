@@ -1,0 +1,56 @@
+.social-icons {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.social-icons li {
+    margin: 0 10px;
+}
+
+$redes:(
+    instagram: red,
+    wsp: green,
+    lkn: blue,
+);
+
+@each $red, $color in $redes {
+    .social-icons#{$red} {
+        color: $color;
+    }
+}
+
+.social-icons a {
+    font-size: 30px;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    position: relative;
+    transition: 0.5s ease;
+    &:hover{
+        background-image: linear-gradient(45deg, #000000, #b8b8b8, #f1f1f1);
+        background-clip: text;
+        color: transparent;
+        font-size: 40px;
+    }
+}
+.social-icons li a::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #12c2e9, #c471ed, #f64f59);
+    transform: scale(1);
+    transition: 0.5s ease-in-out;
+}
+
+.social-icons li a:hover::before {
+    transform: scale(0);
+}

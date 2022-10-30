@@ -1,0 +1,61 @@
+
+#Yo {
+    padding: 50px 0;
+    background: #f5f5f7;
+}
+
+.ajusteyo {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#Yo h2 {
+    font-size: 2.3rem;
+}
+
+#Yo p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+#Yo .small {
+    font-size: 1.2rem;
+    color: #666;
+    font-weight: 600;
+}
+
+.Yo-img {
+    flex: 1 1 400px;
+    padding: 30px;
+    transform: translateX(150%);
+    animation: yo-img-animation 1s ease-in-out forwards;
+}
+
+@keyframes yo-img-animation {
+    100% {
+        transform: translate(0);
+    }
+}
+
+.Yo-text {
+    flex: 1 1 400px;
+    padding: 30px;
+    margin: auto;
+    transform: translate(-150%);
+    animation: yo-text-animation 1s ease-in-out forwards;
+}
+
+@keyframes yo-text-animation {
+    100% {
+        transform: translate(0);
+    }
+}
+
+.Yo-img img {
+    display: block;
+    height: 400px;
+    max-width: 100%;
+    margin: auto;
+    object-fit: cover;
+    object-position: right;
+}
